@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tay K. Creative</title>
+</head>
+
+
+<body>
+    <!--NAVIGATION-->
+    <nav>
+        <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="www.linkedin.com/in/taykcreative">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <!--HEADER-->
+    <header>
+        <h1>I'm Taylor!</h1>
+        <h2>Designer & Developer</h2>
+    </header>
+
+    <main>
+        <img src="images/headshot.jpg" class="headshot">
+        <!--ABOUT ME SECTION-->
+        <section class="about">
+            <h3 class="sr-only">About Me:</h3>
+                <p>My name is Taylor and I am a creator located in Northern, CA. I am a student at Arizona State University. In 2022, I will obtain my Bachelor of Science in Graphic Information Technology with a primary focus on Web Design and Development. May 2020, I started learning to code and founded <i>#WeeklyCodingGoals</i> on Twitter.</p>
+        </section>
+
+        <!--PROJECT SECTION-->
+        <div class="pinkfade">
+            <h3>Projects</h3>
+                <section class="projects" id="projects">
+                    <button class="button display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <!--PROJECT ONE-->
+                        <div class="project project1 mySlides">
+                            <a href="https://tayk-tribute.netlify.app" target="_blank"><img src="images/tribute.png" alt="Mock Tribute Page"></a>
+                            <div>
+                                <button class="live-view live-site">
+                                    <a href="https://tayk-tribute.netlify.app" target="_blank">Live Site</a>
+                                </button>
+                                <button class="live-view view-code">
+                                    <a href="https://github.com/taykcreative/fCC-tribute.git" target="_blank">View Code</a>
+                                </button>
+                            </div>
+                        </div>
+
+                    <!--PROJECT TWO-->
+                        <div class="project project2 mySlides">
+                            <a href="https://tayk-surveyform.netlify.app" target="_blank"><img src="images/survey.png" alt="Mock Form Page"></a>
+                            <div>
+                                <button class = "live-view live-site">
+                                    <a href="https://tayk-surveyform.netlify.app" target="_blank">Live Site</a>
+                                </button>
+                                <button class="live-view view-code">
+                                    <a href="https://github.com/taykcreative/fCC-survey-form.git" target="_blank">View Code</a>
+                                </button>
+                            </div>
+                        </div>
+
+                    <!--PROJECT THREE-->
+                        <div class="project project3 mySlides" id="pr-blog">
+                            <a href="https://tayk-mockblog.netlify.app" target="_blank"><img src="images/blog.png" alt="Mock Blog Site"></a>
+                            <div>
+                                <button class="live-site live-view">
+                                    <a href="https://tayk-mockblog.netlify.app" target="_blank">Live Site</a>
+                                </button>
+                                <button class="live-view view-code">
+                                    <a href="https://github.com/taykcreative/blog-site.git" target="_blank">View Code</a>
+                                </button>
+                            </div>
+                        </div>
+                <button class="button display-right" onclick="plusDivs(+1)">&#10095;</button>
+                </section>
+        </div>
+
+    <!--SKILLS SECTION-->
+        <section class="skills">
+            <h3>Skills</h3>
+                <ul>
+                    <li>HTML,</li>
+                    <li>CSS,</li>
+                    <li>JavaScript,</li>
+                    <li>Java,</li>
+                    <li>& GIT</li>
+                </ul>
+            </section>
+
+        <!--CONTACT SECTION-->
+        <section class="contact" id="contact">
+            <div class="contact-wrapper">
+                <h3>Contact</h3>
+                    <form action="https://formspree.io/f/mzbjlrga" method="POST">
+                        <label for="name">Name: </label>
+                            <input id="name" type="text" class="field name" name="name" placeholder="First &amp; Last" required>
+                        <label for="email">Email: </label>
+                            <input id="email" type="email" class="field email" name="email" placeholder="your@email.com" required>
+                        <label for="textarea">Message: </label>
+                            <textarea id="textarea" class="field" name="textarea" placeholder="Enter message." maxlength="150"></textarea>
+                        <input type="submit" id="submit" value="SEND">
+                    </form>
+            </div>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        Designed & Developed by Taylor Kyle 2020
+    </footer>
+
+<script src="app.js"></script>
+</body>
+</html>

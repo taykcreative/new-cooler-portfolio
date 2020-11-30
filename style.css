@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+body {
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    margin: 0 auto;
+    width: 100%;
+}
+
+a {
+    color: #f16886;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+nav li {
+    text-align: center;
+    width: 33.333%;
+}
+
+header {
+    font-family: 'Lato';
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 3.5rem;
+    width: 400px;
+    margin: 75px 0 -20px 0;
+    padding-left: 10px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.headshot {
+    border-radius: 50%;
+    width: 250px;
+    display: block;
+    margin: auto;
+    border: 1px inset #444;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+section {
+    padding-left: 7px;
+}
+
+.about {
+    max-width: 700px;
+}
+
+.pinkfade {
+    background-image: -webkit-linear-gradient(#fff, #f16886, #fff);
+}
+
+.pinkfade h3 {
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+}
+
+.project {
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    width: 90%;
+    box-shadow: 0 0 5px #444;
+}
+
+.button {
+    background-color: #fff3;
+    border: 1px outset #fff;
+    border-radius: 2px;
+    font-size: 2rem;
+    margin-top: 25%;
+    height: 2em;
+}
+
+.live-view {
+    width: 30%;
+    margin: 10px;
+    padding: 5px;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    border: 1px outset #fff;
+}
+
+.display-left {
+    flex: left;
+}
+
+.skills {
+    margin: 40px 0 50px 0;
+}
+
+.skills ul {
+    width: fit-content;
+    display: flex;
+    margin: auto;
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills li {
+    font-size: 1.2rem;
+    padding-left: 5px;
+    color: #f16886;
+}
+
+.skills li:first-child {
+    padding-left: 0;
+}
+
+.contact {
+    background-color: #444;
+    color: #fff;
+    max-width: 750px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.contact-wrapper {
+    max-width: fit-content;
+    margin: auto;
+}
+
+.contact h3 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2rem;
+}
+
+form {
+    width: 450px;
+    font-size: 1.2rem;
+}
+
+input, textarea{
+    display: block;
+    width: 90%;
+    margin: 0 auto 5px auto;
+    padding: 5px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+#submit {
+    margin: 30px auto 0 auto;
+    width: 40%;
+    display: block;
+}
+
+footer {
+    font-size: small;
+    text-align: center;
+}
+
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    }
