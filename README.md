@@ -1,0 +1,2 @@
+# new-cooler-portfolio
+THIS IS NOT RESPONSIVE YET, JUST FYI. I DID MOBILE FIRST
