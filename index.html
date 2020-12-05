@@ -9,91 +9,96 @@
 
 
 <body>
-    <!--NAVIGATION-->
-    <nav>
-        <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="www.linkedin.com/in/taykcreative">LinkedIn</a></li>
-        </ul>
-    </nav>
     <!--HEADER-->
     <header>
-        <h1>I'm Taylor!</h1>
-        <h2>Designer & Developer</h2>
+        <h1>Tay Kyle</h1>
+        <h2 class="sr-only dd-sr">Designer & Developer</h2>
+    
+
+    <!--NAVIGATION-->
+        <nav>
+            <ul>
+                <li><a href="www.linkedin.com/in/taykcreative">LinkedIn</a></li>
+                <li><a href="https://github.com/taykcreative">GitHub</a> &amp; <a href="https://codepen.io/tayk">CodePen</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <div class="hs-container"><img src="images/headshot.jpg" class="headshot"></div>
         <!--ABOUT ME SECTION-->
         <section class="about">
-            <h3 class="sr-only">About Me:</h3>
-                <p>My name is Taylor and I am a creator located in Northern, CA. I am a student at Arizona State University. In 2022, I will obtain my Bachelor of Science in Graphic Information Technology with a primary focus on Web Design and Development. May 2020, I started learning to code and founded <i>#WeeklyCodingGoals</i> on Twitter.</p>
+            <h3 class="sr-only about-sr">About Me:</h3>
+                <p>I am a creator located in Northern, CA. I am a student at Arizona State University. In 2022, I will obtain my Bachelor of Science in Graphic Information Technology with a primary focus on Web Design and Development. May 2020, I started learning to code and founded <i>#WeeklyCodingGoals</i> on Twitter.</p>
         </section>
 
-        <!--PROJECT SECTION-->
-        <div class="pinkfade">
-            <h3>Projects</h3>
-                <section class="projects" id="projects">
-                    <button class="button display-left" onclick="plusDivs(-1)">&#10094;</button>
-                    <!--PROJECT ONE-->
-                        <div class="project project1 mySlides">
-                            <a href="https://tayk-tribute.netlify.app" target="_blank"><img src="images/tribute.png" alt="Mock Tribute Page"></a>
-                            <div>
-                                <button class="live-view live-site">
-                                    <a href="https://tayk-tribute.netlify.app" target="_blank">Live Site</a>
-                                </button>
-                                <button class="live-view view-code">
-                                    <a href="https://github.com/taykcreative/fCC-tribute.git" target="_blank">View Code</a>
-                                </button>
-                            </div>
+        <!--MY WORK SECTION-->
+            <section class="projects">
+                <h3>My Work:</h3>
+                <!--PROJECT ONE-->
+                    <div class="project project1">
+                        <a href="https://tayk-tribute.netlify.app" target="_blank"><img src="images/tribute.png" alt="Mock Tribute Page"></a>
+                        <div>
+                            <button class="live-view live-site">
+                                <a href="https://tayk-tribute.netlify.app" target="_blank">Live Site</a>
+                            </button>
+                            <button class="live-view view-code">
+                                <a href="https://github.com/taykcreative/fCC-tribute.git" target="_blank">View Code</a>
+                            </button>
                         </div>
+                    </div>
 
-                    <!--PROJECT TWO-->
-                        <div class="project project2 mySlides">
-                            <a href="https://tayk-surveyform.netlify.app" target="_blank"><img src="images/survey.png" alt="Mock Form Page"></a>
-                            <div>
-                                <button class = "live-view live-site">
-                                    <a href="https://tayk-surveyform.netlify.app" target="_blank">Live Site</a>
-                                </button>
-                                <button class="live-view view-code">
-                                    <a href="https://github.com/taykcreative/fCC-survey-form.git" target="_blank">View Code</a>
-                                </button>
-                            </div>
+                <!--PROJECT TWO-->
+                    <div class="project project2">
+                        <a href="https://tayk-surveyform.netlify.app" target="_blank"><img src="images/survey.png" alt="Mock Form Page"></a>
+                        <div>
+                            <button class = "live-view live-site">
+                                <a href="https://tayk-surveyform.netlify.app" target="_blank">Live Site</a>
+                            </button>
+                            <button class="live-view view-code">
+                                <a href="https://github.com/taykcreative/fCC-survey-form.git" target="_blank">View Code</a>
+                            </button>
                         </div>
+                    </div>
 
-                    <!--PROJECT THREE-->
-                        <div class="project project3 mySlides" id="pr-blog">
-                            <a href="https://tayk-mockblog.netlify.app" target="_blank"><img src="images/blog.png" alt="Mock Blog Site"></a>
-                            <div>
-                                <button class="live-site live-view">
-                                    <a href="https://tayk-mockblog.netlify.app" target="_blank">Live Site</a>
-                                </button>
-                                <button class="live-view view-code">
-                                    <a href="https://github.com/taykcreative/blog-site.git" target="_blank">View Code</a>
-                                </button>
-                            </div>
+                <!--PROJECT THREE-->
+                    <div class="project project3" id="pr-blog">
+                        <a href="https://tayk-mockblog.netlify.app" target="_blank"><img src="images/blog.png" alt="Mock Blog Site"></a>
+                        <div>
+                            <button class="live-site live-view">
+                                <a href="https://tayk-mockblog.netlify.app" target="_blank">Live Site</a>
+                            </button>
+                            <button class="live-view view-code">
+                                <a href="https://github.com/taykcreative/blog-site.git" target="_blank">View Code</a>
+                            </button>
                         </div>
-                <button class="button display-right" onclick="plusDivs(+1)">&#10095;</button>
-                </section>
-        </div>
+                    </div>
+            </section>
+        
 
     <!--SKILLS SECTION-->
         <section class="skills">
-            <h3>Skills</h3>
-                <ul>
+            <h3>My Skills:</h3>
+                <span class="list-title">Web Development Skills -</span>
+                <ul class="web-skills">
                     <li>HTML,</li>
                     <li>CSS,</li>
                     <li>JavaScript,</li>
                     <li>Java,</li>
                     <li>& GIT</li>
                 </ul>
+                <span class="list-title">Graphic Design Skills -</span>
+                <ul class="design-skills">
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Typography</li>
+                    <li>Procreate App</li>
+                </ul>
             </section>
 
         <!--CONTACT SECTION-->
         <section class="contact" id="contact">
-            <div class="contact-wrapper">
-                <h3>Contact</h3>
+            <h3>Contact Me:</h3>
+                <div class="contact-wrapper">
                     <form action="https://formspree.io/f/mzbjlrga" method="POST">
                         <label for="name">Name: </label>
                             <input id="name" type="text" class="field name" name="name" placeholder="First &amp; Last" required>
@@ -104,14 +109,13 @@
                         <input type="submit" id="submit" value="SEND">
                     </form>
             </div>
+
+            <!--FOOTER-->
+            <footer>
+                Designed & Developed by Taylor Kyle 2020
+            </footer>
         </section>
-    </main>
 
-    <!--FOOTER-->
-    <footer>
-        Designed & Developed by Taylor Kyle 2020
-    </footer>
-
-<script src="app.js"></script>
+<!--<script src="app.js"></script>-->
 </body>
 </html>

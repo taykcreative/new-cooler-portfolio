@@ -7,13 +7,17 @@ body {
     margin: 0;
 }
 
-nav {
-    margin: 0 auto;
+header {
     width: 100%;
+    background-color: #f0f0f0;
+    position: absolute;
+    top: 0;
+    font-weight: 400;
+    text-align: center;
 }
 
 a {
-    color: #f16886;
+    color: #444;
     text-decoration: none;
 }
 
@@ -31,74 +35,30 @@ nav ul {
 
 nav li {
     text-align: center;
-    width: 33.333%;
-}
-
-header {
-    font-family: 'Lato';
-    font-weight: 300;
+    width: 33%;
 }
 
 h1 {
-    font-size: 3.5rem;
-    width: 400px;
-    margin: 75px 0 -20px 0;
-    padding-left: 10px;
-}
-
-h2 {
-    font-size: 2.5rem;
-    text-align: center;
-}
-
-.hs-container {
-    background-color: #ffda62;
-    padding: 15px 0 5px 0;
-}
-
-.headshot {
-    border-radius: 50%;
-    width: 250px;
-    display: block;
-    margin: auto;
-    border: 1px inset #444;
+    font-size: 2rem;
 }
 
 h3 {
     font-size: 1.3rem;
 }
 
-section {
-    padding-left: 7px;
-}
-
 .about {
-    max-width: 700px;
+    margin: 180px auto 100px auto;
+    width: 95%;
 }
 
-.about p{
-    margin-top: 25px;
-    padding-top: 25px;
-    border-top: 2px dashed #444;
-}
-
-.pinkfade {
-    background-image: -webkit-linear-gradient(#fff, #f16886, #fff);
-}
-
-.pinkfade h3 {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.projects {
-    display: flex;
-    margin-top: 25px;
+p {
+    letter-spacing: 1px;
 }
 
 .project {
     width: 100%;
     text-align: center;
+    padding-bottom: 30px;
 }
 
 img {
@@ -107,16 +67,8 @@ img {
 }
 
 img:hover{
-    border: 1px solid silver;
-}
-
-.button {
-    background-color: #fff3;
-    border: 1px outset #fff;
-    border-radius: 2px;
-    font-size: 2rem;
-    margin-top: 25%;
-    height: 2em;
+    border: 2px solid silver;
+    margin: -2px -2px;
 }
 
 .live-view {
@@ -132,22 +84,33 @@ img:hover{
     flex: left;
 }
 
-.skills {
-    margin: 40px 0 50px 0;
+.skills ul {
+    margin: 20px auto 50px auto;
 }
 
-.skills ul {
+.list-title {
+    text-align: center;
+    font-size: 1.3rem;
+    margin: auto;
+}
+
+.web-skills {
     width: fit-content;
     display: flex;
     margin: auto;
     list-style: none;
+}
+
+.design-skills {
+    text-align: center;
     padding-left: 0;
+    list-style: none;
 }
 
 .skills li {
     font-size: 1.2rem;
     padding-left: 5px;
-    color: #f16886;
+    color: #444;
 }
 
 .skills li:first-child {
@@ -157,24 +120,20 @@ img:hover{
 .contact {
     background-color: #444;
     color: #fff;
-    max-width: 750px;
-    margin: auto;
     padding-bottom: 50px;
 }
 
 .contact-wrapper {
-    max-width: fit-content;
+    width: 100%;
     margin: auto;
 }
 
 .contact h3 {
-    text-align: center;
-    padding-top: 20px;
-    font-size: 2rem;
+    padding: 20px 0 0 8px;
 }
 
 form {
-    width: 450px;
+    width: 100%;
     font-size: 1.2rem;
 }
 
@@ -188,6 +147,10 @@ input, textarea{
     letter-spacing: 1px;
 }
 
+textarea {
+    height: 100px;
+}
+
 #submit {
     margin: 30px auto 0 auto;
     width: 40%;
@@ -197,6 +160,8 @@ input, textarea{
 footer {
     font-size: small;
     text-align: center;
+    margin: 50px auto 10px auto;
+    background-color: #444;
 }
 
 .sr-only {
@@ -207,3 +172,68 @@ footer {
     height:1px;
     overflow:hidden;
     }
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {/*ANYTHING BIGGER THAN PORTRAIT iPAD WIDTH*/
+
+header {
+    width: 100%;
+    border-radius: 0 0 30px 30px;
+}
+
+.about, .skills, .contact {
+    width: 40%;
+    margin-left: 8px;
+}
+
+p {
+    width: 90%;
+    margin-left: 7%;
+}
+
+.contact {
+    color: #444;
+    background-color: #fff;
+}
+
+.contact h3 {
+    padding: 0;
+}
+
+.projects h3 {
+    text-align: center;
+}
+
+.projects {
+    position: absolute;
+    top: 160px;
+    left: 40%;
+    float: right;
+    width: 60%;
+}
+
+img {
+    width: 75%
+}
+
+.about-sr {
+    position: static;
+    left: auto;
+    top: auto;
+    width: fit-content;
+    height: fit-content;
+    }
+
+    footer {
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        width: 75%;
+    }
+
+}
